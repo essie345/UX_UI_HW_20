@@ -1,0 +1,216 @@
+/* ALL PAGE */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+#content-wrap {
+    padding-bottom: 10rem; /* Footer height */
+}
+
+/* HEADER SECTION */
+.navigation {
+    background-color: #1c2120;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    /* border: 2px solid red; */
+}
+.logo {
+    float: left;
+    height: 75px;
+    width: 211px;
+    /* border: 2px solid red; */
+}
+.navigation ul {
+    list-style-type: none;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navigation li {
+    display: inline-block;
+    padding: 14px 14px;    
+    /* border: 2px solid red; */
+}
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+.navigation a:hover {
+    color: #E3B04B;
+}
+/* HERO IMG SECTION */
+.heroImg {
+    height: 600px;
+    padding: 225px;
+}
+.contentHeroImg {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+.mePic {
+    height: 250px;
+    width: auto;
+    float: right;
+    padding: 10px;
+}
+/* SKILLS SECTION */
+.mySkills h1 {
+    text-align: center;
+    padding-top: 1%;
+}
+.contentMySkills {
+    display: flex;
+    flex-direction: row;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    height: 33%;
+    margin: 1%;
+    width: 60%;    
+}
+.skillsPic {
+    float: left;
+    padding-right: 10px;
+}
+.skill_1, .skill_2, .skill3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.skillsHeader {
+    padding-bottom: 5%;
+}
+/* SKILLS SECTION ICON GRID */
+.iconGrid {
+    /* border: 2px solid #f76707; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 40%;
+    padding: 5%;
+    margin-bottom: 20px;
+    margin-right: 1%;   
+    row-gap: 5%;
+    column-gap: 5%;
+}
+.iconGridArea {
+    /* border: 2px solid #f76707; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-content: end;
+    justify-content: center;
+}
+#Figma {
+    background-image: url("../images/figma_logo.png");
+}
+#Invision {
+    background-image: url("../images/invision_logo.png");
+}
+#GitHub{
+    background-image: url("../images/github_logo.png");
+}
+#Adobe_XD {
+    background-image: url("../images/adobexd_logo.png");
+}
+#Miro {
+    background-image: url("../images/miro_logo.png");
+}
+#Visual_Studio {
+    background-image: url("../images/visualstudiocode_logo.png");
+}
+.iconHeading {
+    background-color: rgba(0,0,0,0.7);  
+    height: 25px;
+    color: white;
+    font-size: 20px;
+}
+/* MY WORK SECTION */
+.myWork h1 {
+    text-align: center;
+    padding-top: 1%;
+}
+.myWorkFlexContainer {
+    display: flex;
+    flex-direction: Row;
+    justify-content: center;
+    padding-top: 5%;
+}
+.work_1, .work_2, .work_3 {
+    border: 2px solid #1c2120;; 
+    margin: 2%;
+    width: 15%;
+    height: fit-content;
+    padding-bottom: .5%;
+}
+.workHeader {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.workPic {
+    width: 100%;
+}
+.workText p {
+    margin-left: 5%;
+    padding-bottom: 2%;
+}
+.learnMoreButton {
+    margin-left: 5%;
+    color: #6200EE;
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* FOOTER SECTION */
+footer {
+    background-color: #1c2120;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10rem; /* Footer height */
+}
+footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+footer li {
+    display: inline-block;
+    padding: 30px 50px;
+}
+footer a {
+    text-decoration: none;
+}
+.phone {
+    padding: 30px;
+}
+.email {
+    padding: 30px;
+}
+.linkedin {
+    padding: 30px;
+}
+/* Mobile Media Query */
+@media screen and (max-width: 600px) {
+
+    .myWorkFlexContainer {
+        flex-direction: column;        
+    }
+    .work_1, .work_2, .work_3 {
+        width: 100%;
+    }
+}
